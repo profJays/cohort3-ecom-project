@@ -123,6 +123,13 @@ button.white{
     bottom: -4px;
     left: 20px;
 }
+#mobile{
+    display: none;
+}
+
+#close{
+    display: none;
+}
 
 /* Home Page Starts Here */
 #hero {
@@ -534,6 +541,101 @@ footer .copyright{
     text-align: center;
 }
 
+/* Responsiveness for other Screens using Media Query Starts Here */
 
-
-
+@media only screen and (max-width:768px){
+    /* Home Page Mobile */
+    .section-pl{
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0px 40px 60px rgba(0, 0, 9, 0.1);
+        padding: 80px 0 0 10px;
+        position: fixed;
+        transition: 0.3s;
+    }
+    #navbar li {
+        margin-bottom: 20px;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #mobile i:hover{
+        cursor: pointer;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #hero {
+        background-position: 65%;
+        padding: 0 20px;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    .sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    .sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+    .banner3 {
+        padding: 0 20px;
+    }
+    .banner3 .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #newsletter {
+        padding: 40px 20px;
+    }
+    #newsletter .form {
+        width: 100%;
+    }
+    footer .copyright {
+        text-align: start;
+    }
+}
