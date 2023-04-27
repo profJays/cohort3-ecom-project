@@ -65,7 +65,7 @@ console.log(vals)
 // function greet(firstName, LastName){
 //     console.log("Good evening " + firstName + ' ' + LastName)
 // }
-// greet('Evans', 'Jay');
+// greet('Evans', 'Jay')
 
 // function sums(num1, num2){
 //     const added = num1 + num2
