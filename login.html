@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<title> Responsive Login and Signup Form </title>-->
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <section id="header">
+            <a href="index.html"><img src="img/logo.png" class="logo" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+                    <li id="lg-user"><a class="active" href="login.html"><i style="color:#088178" class="fa fa-user"></i></a></li>
+                    <a href="#" id="close"><i  class="fa fa-times"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
+                <i id="bar" class="fa fa-outdent"></i>
+            </div>
+        </section>
+
+        <section class="container forms">
+            <div class="form login" id="main">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input id="email" type="email" placeholder="Email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input id="password" type="password" placeholder="Password" class="password" required>
+                            <i class='fa fa-eye-slash eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button id="submit">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a id="sign-up" class="link signup-link">Signup</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <!-- <div class="media-options">
+                    <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Login with Facebook</span>
+                    </a>
+                </div> -->
+
+                <div class="media-options">
+                    <a id="signInWithGoogle" class="field google">
+                        <img src="./img/Google-Icon-PNG-768x768.jpg" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup" id="create-acct">
+                <div class="form-content">
+                    <header>Signup</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input id="email-signup" type="email" placeholder="Email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input id="confirm-email-signup" type="email" placeholder="Confirm Email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input id="password-signup" type="password" placeholder="Create password" class="password" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input id="confirm-password-signup" type="password" placeholder="Confirm password" class="password" required>
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button id="create-acct-btn">Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" id="return-btn" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+
+                <!-- <div class="line"></div> -->
+
+                <!-- <div class="media-options">
+                    <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Login with Facebook</span>
+                    </a>
+                </div> -->
+
+                <div class="media-options">
+                    <a id="signInWithGoogle" class="field google">
+                        <img src="./img/Google-Icon-PNG-768x768.jpg" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- JavaScript -->
+        <script src="./js/login.js"></script>
+        <script src="./js/script.js"></script>
+        <script type="module" src="./js/auth.js"></script>
+
+    </body>
+</html>
