@@ -123,8 +123,19 @@ button.white{
     bottom: -4px;
     left: 20px;
 }
+#signInBtn, #signOutBtn{
+    padding: 7px 15px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+}
+
+#signInBtn:hover, #signOutBtn:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 1, 0.3);
+}
+
 #mobile{
     display: none;
+    align-items: center;
 }
 
 #close{
@@ -638,4 +649,43 @@ footer .copyright{
     footer .copyright {
         text-align: start;
     }
+}
+
+
+
+
+
+/* About Page Starts Here */
+#page-header.about-header{
+    background-image: url("img/about/banner.png");
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+#about-app h1{
+    text-align: center;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
